@@ -185,7 +185,7 @@ function generateExports(mappings: Record<string, Record<string, string>>) {
   const imports = Object.entries(mappings).map(([name]) => {
     const pascalName = pascalize(name);
 
-    return `import Ph${pascalName} from "./components/ph-${name}.gts";`;
+    return `import Ph${pascalName} from './components/ph-${name}.gts';`;
   });
 
   const exports: string[] = [];
@@ -212,9 +212,9 @@ function generateExports(mappings: Record<string, Record<string, string>>) {
 ${imports.join("\n")}
 
 export {
-    ${exports.join(",\n\t")}
-}
-  `;
+  ${exports.join(",\n  ")},
+};
+`;
 
   // .reduce(
   //   (acc, cur) => acc + cur,
