@@ -96,9 +96,7 @@ function generateComponents(mappings: Record<string, Record<string, string>>) {
 
     const content = Object.entries(variants)
       .map(([variant, content], index) => {
-        return `\n<g v-${
-          index > 0 ? "else-" : ""
-        }if="displayWeight === '${variant}'">${content}</g>`;
+        return `\n      {{#if (this.eq this.weight "${variant}")}}<g>${content}</g>{{/if}}`;
       })
       .join("");
 
@@ -142,6 +140,8 @@ export default class Ph${name} extends Component<Ph${name}Signature> {
       ? 'scale(-1, 1)'
       : undefined;
   }
+
+  eq = (a: string, b: string) => a === b;
 
   <template>
     <svg
