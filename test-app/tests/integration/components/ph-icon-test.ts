@@ -33,7 +33,7 @@ module('Integration | Component | ph-icon', function (hooks) {
         to="360 0 0"
         repeatCount="indefinite"
       />
-    <PhAcorn />`);
+    </PhAcorn>`);
 
     assert.dom('[data-test-id="acorn"]').exists();
     assert.dom('[data-test-id="icon-animation"]').exists();
