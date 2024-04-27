@@ -161,7 +161,7 @@ export default class Ph${name} extends Component<Ph${name}Signature> {
 `;
     try {
       fs.writeFileSync(
-        path.join(COMPONENTS_PATH, `Ph${name}.gts`),
+        path.join(COMPONENTS_PATH, `ph-${icon}.gts`),
         componentString,
         {
           flag: "w",
@@ -185,7 +185,7 @@ function generateExports(mappings: Record<string, Record<string, string>>) {
   const imports = Object.entries(mappings).map(([name]) => {
     const pascalName = pascalize(name);
 
-    return `import Ph${pascalName} from "./icons/Ph${pascalName}.gts";`;
+    return `import Ph${pascalName} from "./components/ph-${name}.gts";`;
   });
 
   const exports: string[] = [];
