@@ -10,7 +10,7 @@ const __dirname = url.fileURLToPath(new URL(".", import.meta.url));
 
 const ASSETS_PATH = path.join(__dirname, "../core/assets");
 const COMPONENTS_PATH = path.join(__dirname, "../ember-phosphor-icons/src/components");
-const INDEX_PATH = path.join(__dirname, "../src/index.ts");
+const INDEX_PATH = path.join(__dirname, "../ember-phosphor-icons/src/index.ts");
 
 if (!fs.existsSync(ASSETS_PATH)) {
   console.error(
