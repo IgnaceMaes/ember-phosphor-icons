@@ -12,13 +12,17 @@
     "start:addon": "pnpm --filter ember-phosphor-icons start --no-watch.clearScreen",
     "start:test-app": "pnpm --filter test-app start",
     "test": "pnpm --filter '*' test",
-    "test:ember": "pnpm --filter '*' test:ember"
+    "test:ember": "pnpm --filter '*' test:ember",
+    "assemble": "tsx bin/assemble.ts"
   },
   "devDependencies": {
     "@glint/core": "^1.2.1",
+    "@types/node": "^20.12.7",
+    "chalk": "^5.3.0",
     "concurrently": "^8.2.0",
     "prettier": "^3.0.3",
-    "prettier-plugin-ember-template-tag": "^1.1.0"
+    "prettier-plugin-ember-template-tag": "^1.1.0",
+    "tsx": "^4.7.3"
   },
   "pnpm": {
     "overrides": {

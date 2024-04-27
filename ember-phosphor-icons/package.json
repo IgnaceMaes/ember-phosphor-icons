@@ -50,6 +50,7 @@
   },
   "dependencies": {
     "@embroider/addon-shim": "^1.8.7",
+    "@glimmer/component": "^1.1.2",
     "decorator-transforms": "^1.0.1"
   },
   "devDependencies": {
@@ -111,6 +112,8 @@
     "version": 2,
     "type": "addon",
     "main": "addon-main.cjs",
-    "app-js": {}
+    "app-js": {
+      "./components/ph-icon.js": "./dist/_app_/components/ph-icon.js"
+    }
   }
 }
