@@ -1,0 +1,63 @@
+/* GENERATED FILE */
+import Component from '@glimmer/component';
+
+interface PhSubsetProperOfSignature {
+  Args: {
+    weight?: 'thin' | 'light' | 'regular' | 'bold' | 'fill' | 'duotone';
+    size?: string | number;
+    color?: string;
+    mirrored?: boolean;
+  };
+  Blocks: {
+    default: [];
+  };
+  Element: SVGElement;
+}
+
+export default class PhSubsetProperOf extends Component<PhSubsetProperOfSignature> {
+  get weight() {
+    return this.args.weight ?? 'regular';
+  }
+
+  get size() {
+    return this.args.size ?? '1em';
+  }
+
+  get color() {
+    return this.args.color ?? 'currentColor';
+  }
+
+  get mirrored() {
+    const contextMirrored = this.args.mirrored ?? false;
+    return this.args.mirrored !== undefined
+      ? this.args.mirrored
+        ? 'scale(-1, 1)'
+        : undefined
+      : contextMirrored
+      ? 'scale(-1, 1)'
+      : undefined;
+  }
+
+  eq = (a: string, b: string) => a === b;
+
+  <template>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 256 256"
+      width={{this.size}}
+      height={{this.size}}
+      fill={{this.color}}
+      transform={{this.mirrored}}
+      ...attributes
+    >
+      {{yield}}
+      
+      {{#if (this.eq this.weight "bold")}}<g><path d="M212,208a12,12,0,0,1-12,12H128a92,92,0,0,1,0-184h72a12,12,0,0,1,0,24H128a68,68,0,0,0,0,136h72A12,12,0,0,1,212,208Z"/></g>{{/if}}
+      {{#if (this.eq this.weight "duotone")}}<g><path d="M200,48V208H128a80,80,0,0,1-80-80h0a80,80,0,0,1,80-80Z" opacity="0.2"/><path d="M208,208a8,8,0,0,1-8,8H128a88,88,0,0,1,0-176h72a8,8,0,0,1,0,16H128a72,72,0,0,0,0,144h72A8,8,0,0,1,208,208Z"/></g>{{/if}}
+      {{#if (this.eq this.weight "fill")}}<g><path d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM128,176h48a8,8,0,0,1,0,16H128a64,64,0,0,1,0-128h48a8,8,0,0,1,0,16H128a48,48,0,0,0,0,96Z"/></g>{{/if}}
+      {{#if (this.eq this.weight "light")}}<g><path d="M206,208a6,6,0,0,1-6,6H128a86,86,0,0,1,0-172h72a6,6,0,0,1,0,12H128a74,74,0,0,0,0,148h72A6,6,0,0,1,206,208Z"/></g>{{/if}}
+      {{#if (this.eq this.weight "regular")}}<g><path d="M208,208a8,8,0,0,1-8,8H128a88,88,0,0,1,0-176h72a8,8,0,0,1,0,16H128a72,72,0,0,0,0,144h72A8,8,0,0,1,208,208Z"/></g>{{/if}}
+      {{#if (this.eq this.weight "thin")}}<g><path d="M204,208a4,4,0,0,1-4,4H128a84,84,0,0,1,0-168h72a4,4,0,0,1,0,8H128a76,76,0,0,0,0,152h72A4,4,0,0,1,204,208Z"/></g>{{/if}}
+    </svg>
+  </template>
+}
