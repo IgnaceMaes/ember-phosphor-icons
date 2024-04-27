@@ -1,13 +1,20 @@
 {
   "name": "ember-phosphor-icons",
   "version": "0.0.0",
-  "description": "The default blueprint for Embroider v2 addons.",
+  "description": "A clean and friendly icon family for Ember, too!",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "icons",
+    "svg",
+    "phosphor",
+    "design",
+    "interface",
+    "UI",
+    "UX"
   ],
-  "repository": "",
+  "repository": "https://github.com/IgnaceMaes/ember-phosphor-icons.git",
   "license": "MIT",
-  "author": "",
+  "author": "Ignace Maes (https://ignacemaes.com/)",
   "exports": {
     ".": {
       "types": "./declarations/index.d.ts",

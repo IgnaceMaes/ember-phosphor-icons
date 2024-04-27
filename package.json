@@ -13,9 +13,12 @@
     "start:test-app": "pnpm --filter test-app start",
     "test": "pnpm --filter '*' test",
     "test:ember": "pnpm --filter '*' test:ember",
-    "assemble": "tsx bin/assemble.ts"
+    "assemble": "tsx bin/assemble.ts",
+    "release": "changeset publish"
   },
   "devDependencies": {
+    "@changesets/changelog-github": "^0.5.0",
+    "@changesets/cli": "^2.27.1",
     "@glint/core": "^1.2.1",
     "@types/node": "^20.12.7",
     "chalk": "^5.3.0",
