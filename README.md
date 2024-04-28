@@ -34,6 +34,21 @@ pnpm install ember-phosphor-icons
 bun install ember-phosphor-icons
 ```
 
+### Glint template registry
+
+If you're not yet using template tag components, you can make use of the provided template registry for Glint. This will allow you to use the icons in your templates with full type checking.
+
+```ts
+import '@glint/environment-ember-loose';
+import type EmberPhosphorIconsRegistery from 'ember-phosphor-icons/template-registry';
+
+declare module '@glint/environment-ember-loose/registry' {
+  export default interface Registry extends EmberPhosphorIconsRegistery, /* ... */ {
+    // local entries
+  }
+}
+```
+
 ## Usage
 
 ```glimmer-js
