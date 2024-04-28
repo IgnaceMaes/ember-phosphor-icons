@@ -1,5 +1,15 @@
 # ember-phosphor-icons
 
+## 0.3.0
+
+### Minor Changes
+
+- [`7c3fa81`](https://github.com/IgnaceMaes/ember-phosphor-icons/commit/7c3fa817c60d4201ce5f400202be8cb7d9e5a583) Thanks [@IgnaceMaes](https://github.com/IgnaceMaes)! - docs: add jsdoc component arg info
+
+### Patch Changes
+
+- [`d707e33`](https://github.com/IgnaceMaes/ember-phosphor-icons/commit/d707e3317a74901ba3c703e0af1dc2a834ad6983) Thanks [@IgnaceMaes](https://github.com/IgnaceMaes)! - tests: add support for testing against ember 4.5
+
 ## 0.2.0
 
 ### Minor Changes
