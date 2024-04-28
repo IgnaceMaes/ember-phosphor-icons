@@ -20,7 +20,7 @@ Phosphor is a flexible icon family for interfaces, diagrams, presentations — w
 - Embroider or ember-auto-import v2
 
 > [!IMPORTANT]  
-> It is highly recommended to only use this addon with Embroider. Otherwise you do not get the benefit of tree shaking and the full icon set will be included which increases the bundle size by a lot.
+> It is highly recommended to only use this addon with Embroider. Otherwise you do not get the benefit of tree shaking and the full icon set will be included, which increases the bundle size by a lot.
 
 ## Installation
 
