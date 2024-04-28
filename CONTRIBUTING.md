@@ -16,6 +16,13 @@
 - `cd ember-phosphor-icons`
 - `pnpm build`
 
+## Assembling the icons
+
+This instruction will generate all component files, the `index.ts`, and the template registry.
+
+- `cd ember-phosphor-icons`
+- `pnpm run assemble`
+
 ## Running tests
 
 - `cd test-app`
