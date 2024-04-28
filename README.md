@@ -53,8 +53,8 @@ declare module '@glint/environment-ember-loose/registry' {
 ## Usage
 
 ```glimmer-js
-import PhCube from "ember-phosphor-icons/components/ph-cube";
-import PhHeart from "ember-phosphor-icons/components/ph-heart";
+import PhCube from 'ember-phosphor-icons/components/ph-cube';
+import PhHeart from 'ember-phosphor-icons/components/ph-heart';
 
 <template>
   <PhCube />
