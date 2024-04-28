@@ -104,6 +104,9 @@ import PhCube from 'ember-phosphor-icons/components/ph-cube';
 > [!NOTE]
 > The coordinate space of slotted elements is relative to the contents of the icon `viewBox`, which is a 256x256 square. Only [valid SVG elements](https://developer.mozilla.org/en-US/docs/Web/SVG/Element#SVG_elements_by_category) will be rendered.
 
+> [!TIP]
+> Make sure you have `babel-plugin-ember-template-compilation@^2.2.2` or higher installed to support camel cased SVG elements. ([as this was a known bug before](https://github.com/emberjs/babel-plugin-ember-template-compilation/pull/33))
+
 ## Contributing
 
 See the [Contributing](CONTRIBUTING.md) guide for details.
