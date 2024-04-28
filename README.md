@@ -13,6 +13,7 @@ Phosphor is a flexible icon family for interfaces, diagrams, presentations — w
 - 🌲 **Tree-shakable**: Only include the icons which are actually used in your application.
 - 🎨 **Customizable**: Change the icon's color, size, and weight with simple arguments.
 - 🧵 **V2 addon format**: Ready for modern Ember.
+- 🚀 **SSR/SSG-ready**: Works in apps using Fastboot or Prember.
 
 ## Compatibility
 
