@@ -235,9 +235,9 @@ export default interface Registry {
     fs.writeFileSync(TEMPLATE_REGISTRY_PATH, indexString, {
       flag: "w",
     });
-    console.log(chalk.green("Export success"));
+    console.log(chalk.green("Template registry generated successfully"));
   } catch (err) {
-    console.error(chalk.red("Export failed"));
+    console.error(chalk.red("Template registry generation failed"));
     console.group();
     console.error(err);
     console.groupEnd();
