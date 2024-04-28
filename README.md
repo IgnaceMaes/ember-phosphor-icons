@@ -63,7 +63,7 @@ The following will cause the Cube icon to rotate and pulse:
 import PhCube from 'ember-phosphor-icons/components/ph-cube';
 
 <template>
-  <PhCube color="darkorchid" weight="duotone">
+  <PhCube @color="darkorchid" @weight="duotone">
     <animate
       attributeName="opacity"
       values="0;1;0"
