@@ -24,12 +24,14 @@ Phosphor is a flexible icon family for interfaces, diagrams, presentations — w
 
 ## Installation
 
-```
+```sh
 npm install ember-phosphor-icons
 # or
 yarn add ember-phosphor-icons
 # or
 pnpm install ember-phosphor-icons
+# or
+bun install ember-phosphor-icons
 ```
 
 ## Usage
