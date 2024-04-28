@@ -17,7 +17,7 @@ Phosphor is a flexible icon family for interfaces, diagrams, presentations — w
 
 ## Compatibility
 
-- Ember.js v4.12 or above
+- Ember.js v4.5 or above (for versions below install [ember-functions-as-helper-polyfill](https://github.com/ember-polyfills/ember-functions-as-helper-polyfill))
 - Embroider or ember-auto-import v2
 
 > [!IMPORTANT]  
