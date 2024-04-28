@@ -11,6 +11,7 @@ const __dirname = url.fileURLToPath(new URL(".", import.meta.url));
 const ASSETS_PATH = path.join(__dirname, "../core/assets");
 const COMPONENTS_PATH = path.join(__dirname, "../ember-phosphor-icons/src/components");
 const INDEX_PATH = path.join(__dirname, "../ember-phosphor-icons/src/index.ts");
+const TEMPLATE_REGISTRY_PATH = path.join(__dirname, "../ember-phosphor-icons/src/template-registry.ts");
 
 if (!fs.existsSync(ASSETS_PATH)) {
   console.error(
@@ -25,6 +26,7 @@ const mappings = readFiles();
 
 generateComponents(mappings);
 generateExports(mappings);
+generateTemplateRegistry(mappings);
 
 console.log(chalk.green(`Compiled ${Object.keys(mappings).length} icons`));
 
@@ -185,6 +187,52 @@ export {
 
   try {
     fs.writeFileSync(INDEX_PATH, indexString, {
+      flag: "w",
+    });
+    console.log(chalk.green("Gener success"));
+  } catch (err) {
+    console.error(chalk.red("Export failed"));
+    console.group();
+    console.error(err);
+    console.groupEnd();
+  }
+}
+
+function generateTemplateRegistry(mappings: Record<string, Record<string, string>>) {
+  const imports = Object.entries(mappings).map(([name]) => {
+    const pascalName = pascalize(name);
+
+    return `import type Ph${pascalName} from './components/ph-${name}.gts';`;
+  });
+
+  const exports: string[] = [];
+
+  Object.entries(mappings).forEach(([name]) => {
+    const iconData = icons.find((icon) => icon.name === name);
+
+    if (!iconData) {
+      throw new Error(`Could not find icon data for ${name}`);
+    }
+
+    exports.push(`Ph${iconData.pascal_name}: typeof Ph${iconData.pascal_name}`);
+
+    if ("alias" in iconData) {
+      exports.push(
+        `Ph${iconData["alias"].pascal_name}: typeof Ph${iconData.pascal_name}`,
+      );
+    }
+  });
+
+  const indexString = `/* GENERATED FILE */
+${imports.join("\n")}
+
+export default interface Registry {
+  ${exports.join(";\n  ")};
+}
+`;
+
+  try {
+    fs.writeFileSync(TEMPLATE_REGISTRY_PATH, indexString, {
       flag: "w",
     });
     console.log(chalk.green("Export success"));
