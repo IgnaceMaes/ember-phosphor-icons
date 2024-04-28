@@ -6,10 +6,21 @@ Phosphor is a flexible icon family for interfaces, diagrams, presentations — w
 
 [![npm](https://img.shields.io/npm/v/ember-phosphor-icons)](https://npm.im/ember-phosphor-icons)
 
+## Features
+
+- 🔥 **1.5K+ icons**: A large set of icons - with 6 variants per icon.
+- 💙 **TypeScript and Glint support**: Glint types are provided for strict template checking.
+- 🌲 **Tree-shakable**: Only include the icons which are actually used in your application.
+- 🎨 **Customizable**: Change the icon's color, size, and weight with simple arguments.
+- 🧵 **V2 addon format**: Ready for modern Ember.
+
 ## Compatibility
 
 - Ember.js v4.12 or above
 - Embroider or ember-auto-import v2
+
+> [!IMPORTANT]  
+> It is highly recommended to only use this addon with Embroider. Otherwise you do not get the benefit of tree shaking and the full icon set will be included which increases the bundle size by a lot.
 
 ## Installation
 
