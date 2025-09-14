@@ -73,14 +73,6 @@ function readFile(path: string) {
     .replace(/<\/svg>/g, "");
 }
 
-// function checkFiles(icon) {
-//   const weightsPresent = Object.keys(icon);
-//   return (
-//     weightsPresent.length === 6 &&
-//     weightsPresent.every((w) => weights.includes(w))
-//   );
-// }
-
 function generateComponents(mappings: Record<string, Record<string, string>>) {
   let passes = 0;
   let fails = 0;
@@ -106,7 +98,7 @@ function generateComponents(mappings: Record<string, Record<string, string>>) {
 /* GENERATED FILE */
 import PhIcon from '../ph-icon.ts';
 
-export default class PhAcorn extends PhIcon {
+export default class Ph${name} extends PhIcon {
   <template>
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -179,11 +171,6 @@ export {
   ${exports.join(",\n  ")},
 };
 `;
-
-  // .reduce(
-  //   (acc, cur) => acc + cur,
-  //   `/* GENERATED FILE */\n/* eslint-disable import/prefer-default-export */\n\n`,
-  // );
 
   try {
     fs.writeFileSync(INDEX_PATH, indexString, {
