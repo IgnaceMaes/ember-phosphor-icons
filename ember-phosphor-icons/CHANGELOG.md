@@ -1,5 +1,15 @@
 # ember-phosphor-icons
 
+## 1.0.0
+
+### Major Changes
+
+- [#10](https://github.com/IgnaceMaes/ember-phosphor-icons/pull/10) [`bc01544`](https://github.com/IgnaceMaes/ember-phosphor-icons/commit/bc0154465ee05ae165ccba0d32152d0f6a5606f9) Thanks [@IgnaceMaes](https://github.com/IgnaceMaes)! - feat: update phosphor icons core and declare first stable major
+
+### Patch Changes
+
+- [#8](https://github.com/IgnaceMaes/ember-phosphor-icons/pull/8) [`a2fe547`](https://github.com/IgnaceMaes/ember-phosphor-icons/commit/a2fe547dc5d265787591f7b3b292b34034ee0839) Thanks [@IgnaceMaes](https://github.com/IgnaceMaes)! - fix: use correct component name based on the icon name
+
 ## 0.3.0
 
 ### Minor Changes
