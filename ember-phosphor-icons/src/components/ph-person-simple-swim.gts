@@ -1,7 +1,7 @@
 /* GENERATED FILE */
 import PhIcon from '../ph-icon.ts';
 
-export default class PhAcorn extends PhIcon {
+export default class PhPersonSimpleSwim extends PhIcon {
   <template>
     <svg
       xmlns="http://www.w3.org/2000/svg"
