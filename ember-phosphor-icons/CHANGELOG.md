@@ -1,5 +1,11 @@
 # ember-phosphor-icons
 
+## 1.0.1
+
+### Patch Changes
+
+- [#11](https://github.com/IgnaceMaes/ember-phosphor-icons/pull/11) [`1b8087f`](https://github.com/IgnaceMaes/ember-phosphor-icons/commit/1b8087f82ace236610b5317c2b50b3396d9c9c95) Thanks [@IgnaceMaes](https://github.com/IgnaceMaes)! - fix: actually regenerate icon files
+
 ## 1.0.0
 
 ### Major Changes
