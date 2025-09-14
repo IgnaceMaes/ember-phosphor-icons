@@ -15,10 +15,10 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v3
 
-      - name: Setup pnpm and Node.js 20
+      - name: Setup pnpm and Node.js 22
         uses: wyvox/action-setup-pnpm@v2
         with:
-          node-version: 20
+          node-version: 22
 
       - name: Create Release Pull Request or Publish to npm
         id: changesets
