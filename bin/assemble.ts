@@ -73,14 +73,6 @@ function readFile(path: string) {
     .replace(/<\/svg>/g, "");
 }
 
-// function checkFiles(icon) {
-//   const weightsPresent = Object.keys(icon);
-//   return (
-//     weightsPresent.length === 6 &&
-//     weightsPresent.every((w) => weights.includes(w))
-//   );
-// }
-
 function generateComponents(mappings: Record<string, Record<string, string>>) {
   let passes = 0;
   let fails = 0;
@@ -179,11 +171,6 @@ export {
   ${exports.join(",\n  ")},
 };
 `;
-
-  // .reduce(
-  //   (acc, cur) => acc + cur,
-  //   `/* GENERATED FILE */\n/* eslint-disable import/prefer-default-export */\n\n`,
-  // );
 
   try {
     fs.writeFileSync(INDEX_PATH, indexString, {
