@@ -44,9 +44,6 @@ importers:
       '@embroider/addon-shim':
         specifier: ^1.8.7
         version: 1.10.0
-      '@glimmer/component':
-        specifier: ^1.1.2
-        version: 1.1.2(@babel/core@7.28.4)
       decorator-transforms:
         specifier: ^1.0.1
         version: 1.2.1(@babel/core@7.28.4)
@@ -63,6 +60,9 @@ importers:
       '@embroider/addon-dev':
         specifier: ^4.1.0
         version: 4.3.1(@glint/template@1.5.2)(rollup@4.50.1)
+      '@glimmer/component':
+        specifier: ^1.1.2
+        version: 1.1.2(@babel/core@7.28.4)
       '@glint/core':
         specifier: ^1.2.1
         version: 1.5.2(typescript@5.9.2)
@@ -9389,26 +9389,6 @@ snapshots:
       - '@babel/core'
       - supports-color
 
-  '@types/ember@4.0.11':
-    dependencies:
-      '@types/ember__application': 4.0.11(@babel/core@7.28.4)
-      '@types/ember__array': 4.0.10(@babel/core@7.28.4)
-      '@types/ember__component': 4.0.22(@babel/core@7.28.4)
-      '@types/ember__controller': 4.0.12(@babel/core@7.28.4)
-      '@types/ember__debug': 4.0.8(@babel/core@7.28.4)
-      '@types/ember__engine': 4.0.11(@babel/core@7.28.4)
-      '@types/ember__error': 4.0.6
-      '@types/ember__object': 4.0.12(@babel/core@7.28.4)
-      '@types/ember__polyfills': 4.0.6
-      '@types/ember__routing': 4.0.22(@babel/core@7.28.4)
-      '@types/ember__runloop': 4.0.10
-      '@types/ember__service': 4.0.9(@babel/core@7.28.4)
-      '@types/ember__string': 3.16.3
-      '@types/ember__template': 4.0.7
-      '@types/ember__test': 4.0.6(@babel/core@7.28.4)
-      '@types/ember__utils': 4.0.7
-      '@types/rsvp': 4.0.9
-
   '@types/ember@4.0.11(@babel/core@7.28.4)':
     dependencies:
       '@types/ember__application': 4.0.11(@babel/core@7.28.4)
@@ -9435,7 +9415,7 @@ snapshots:
   '@types/ember__application@4.0.11(@babel/core@7.28.4)':
     dependencies:
       '@glimmer/component': 1.1.2(@babel/core@7.28.4)
-      '@types/ember': 4.0.11
+      '@types/ember': 4.0.11(@babel/core@7.28.4)
       '@types/ember__engine': 4.0.11(@babel/core@7.28.4)
       '@types/ember__object': 4.0.12(@babel/core@7.28.4)
       '@types/ember__owner': 4.0.9
@@ -9526,10 +9506,6 @@ snapshots:
       - '@babel/core'
       - supports-color
 
-  '@types/ember__runloop@4.0.10':
-    dependencies:
-      '@types/ember': 4.0.11
-
   '@types/ember__runloop@4.0.10(@babel/core@7.28.4)':
     dependencies:
       '@types/ember': 4.0.11(@babel/core@7.28.4)
@@ -9556,10 +9532,6 @@ snapshots:
     transitivePeerDependencies:
       - '@babel/core'
       - supports-color
-
-  '@types/ember__utils@4.0.7':
-    dependencies:
-      '@types/ember': 4.0.11
 
   '@types/ember__utils@4.0.7(@babel/core@7.28.4)':
     dependencies:
