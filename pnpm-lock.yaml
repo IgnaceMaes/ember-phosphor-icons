@@ -64,16 +64,16 @@ importers:
         specifier: ^2.0.0
         version: 2.0.0
       '@glint/core':
-        specifier: ^1.2.1
+        specifier: ^1.5.2
         version: 1.5.2(typescript@5.9.2)
       '@glint/environment-ember-loose':
-        specifier: ^1.2.1
+        specifier: ^1.5.2
         version: 1.5.2(@glimmer/component@2.0.0)(@glint/template@1.5.2)(@types/ember__array@4.0.10(@babel/core@7.28.4))(@types/ember__component@4.0.22(@babel/core@7.28.4))(@types/ember__controller@4.0.12(@babel/core@7.28.4))(@types/ember__object@4.0.12(@babel/core@7.28.4))(@types/ember__routing@4.0.22(@babel/core@7.28.4))(ember-cli-htmlbars@6.3.0)(ember-modifier@4.2.2(@babel/core@7.28.4))
       '@glint/environment-ember-template-imports':
-        specifier: ^1.2.1
+        specifier: ^1.5.2
         version: 1.5.2(@glint/environment-ember-loose@1.5.2(@glimmer/component@2.0.0)(@glint/template@1.5.2)(@types/ember__array@4.0.10(@babel/core@7.28.4))(@types/ember__component@4.0.22(@babel/core@7.28.4))(@types/ember__controller@4.0.12(@babel/core@7.28.4))(@types/ember__object@4.0.12(@babel/core@7.28.4))(@types/ember__routing@4.0.22(@babel/core@7.28.4))(ember-cli-htmlbars@6.3.0)(ember-modifier@4.2.2(@babel/core@7.28.4)))(@glint/template@1.5.2)(@types/ember__component@4.0.22(@babel/core@7.28.4))(@types/ember__helper@4.0.9(@babel/core@7.28.4))(@types/ember__modifier@4.0.9(@babel/core@7.28.4))(@types/ember__routing@4.0.22(@babel/core@7.28.4))
       '@glint/template':
-        specifier: ^1.2.1
+        specifier: ~1.5.2
         version: 1.5.2
       '@rollup/plugin-babel':
         specifier: ^6.0.4
