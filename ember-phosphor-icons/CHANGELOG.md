@@ -1,5 +1,13 @@
 # ember-phosphor-icons
 
+## 1.0.2
+
+### Patch Changes
+
+- [#14](https://github.com/IgnaceMaes/ember-phosphor-icons/pull/14) [`f2c5d59`](https://github.com/IgnaceMaes/ember-phosphor-icons/commit/f2c5d593b2c783c0de37bce690a6e97c39a453cb) Thanks [@IgnaceMaes](https://github.com/IgnaceMaes)! - fix: pin glint/template on 1.5.x to fix svg linting
+
+- [#13](https://github.com/IgnaceMaes/ember-phosphor-icons/pull/13) [`2d21338`](https://github.com/IgnaceMaes/ember-phosphor-icons/commit/2d213384ffef52abe86da46216e04bfd7b94435d) Thanks [@IgnaceMaes](https://github.com/IgnaceMaes)! - fix: move @glimmer/component to devDependencies to fix glint issues
+
 ## 1.0.1
 
 ### Patch Changes
