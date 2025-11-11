@@ -68,7 +68,7 @@
     "@glint/environment-ember-loose": "^1.5.2",
     "@glint/environment-ember-template-imports": "^1.5.2",
     "@glint/template": "~1.5.2",
-    "@glimmer/component": "^2.0.0",
+    "@glimmer/component": "^1.1.2",
     "@rollup/plugin-babel": "^6.0.4",
     "@tsconfig/ember": "^3.0.2",
     "@typescript-eslint/eslint-plugin": "^6.14.0",
